@@ -1,5 +1,12 @@
+import { notFound } from "next/navigation";
+
 const ReviewDetailsPage = ({ params }) => {
   const { productId, reviewId } = params;
+  
+  if (!false) {
+    notFound();
+  }
+
   return (
     <div>
       <h1>product - {productId}</h1>
